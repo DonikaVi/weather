@@ -15,8 +15,6 @@ import PageCity from "./components/PageCity";
 const API_KEY = "4cd26a9ca1dd9cefed859cf6822fadf7";
 
 function App() {
-  //navigator.geolocation.getCurrentPosition((r) => console.log(r), e => console.log(e));
-
   return (
     <div className="App">
       <Header />
@@ -30,6 +28,9 @@ function App() {
           <MainPage apiKey={API_KEY} />
         </Route>
         <Route path="/city/" children={<PageCity />} />
+        <Route path="*">
+          <MainPage apiKey={API_KEY} />
+        </Route>
       </Switch>
       </Router>
       </Provider>
