@@ -19,7 +19,7 @@ const cityOptions = [
 
 function MainPage(props) {
   const history = useHistory();
-  const { weatherInfo, city, loc } = props;
+  const { weatherInfo, city } = props;
 
   const handleChange = async (e, data) => {
     props.dispatchSetCity(data.value);
