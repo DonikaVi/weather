@@ -24,9 +24,6 @@ function App() {
         <Route exact path="/">
           <MainPage apiKey={API_KEY} />
         </Route>
-        <Route exact path="/">
-          <MainPage apiKey={API_KEY} />
-        </Route>
         <Route path="/city/" children={<PageCity />} />
         <Route path="*">
           <MainPage apiKey={API_KEY} />
